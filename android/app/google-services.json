@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703996155641",
+    "project_id": "test-koesnadi",
+    "storage_bucket": "test-koesnadi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703996155641:android:68699333462500ad427428",
+        "android_client_info": {
+          "package_name": "com.example.test_koesnadi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlz18PFZGo3i99IRxg7MIafE7EJwPLCkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
