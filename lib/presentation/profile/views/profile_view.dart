@@ -97,31 +97,38 @@ class ProfileView extends StatelessWidget {
                                             CrossAxisAlignment.start,
                                         children: [
                                           SizedBox(
-                                            width: width * 0.4,
+                                            width: width * 0.35,
                                             height: height * 0.075,
                                             child: Text(
                                               state.user.fullName,
                                               style: TextStyle(
-                                                fontSize: 20,
+                                                fontSize: 16,
                                                 fontWeight: FontWeight.w800,
                                                 color: AppColors.inversePrimary,
                                               ),
                                             ),
                                           ),
-                                          Text(
-                                            state.user.birthDate,
-                                            style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w800,
-                                              color: AppColors.inversePrimary,
+                                          SizedBox(
+                                            width: width * 0.35,
+                                            height: height * 0.03,
+                                            child: Text(
+                                              state.user.birthDate,
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w800,
+                                                color: AppColors.inversePrimary,
+                                              ),
                                             ),
                                           ),
                                         ],
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 8),
                                       child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.end,
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
@@ -147,13 +154,21 @@ class ProfileView extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          Text(
-                                            state.user.favorite,
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.w800,
-                                              color: AppColors.inversePrimary,
+                                          SizedBox(
+                                            width: width * 0.2,
+                                            height: height * 0.04,
+                                            child: Align(
+                                              alignment: Alignment.bottomRight,
+                                              child: Text(
+                                                state.user.favorite,
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w800,
+                                                  color:
+                                                      AppColors.inversePrimary,
+                                                ),
+                                              ),
                                             ),
-                                          ),
+                                          )
                                         ],
                                       ),
                                     ),
