@@ -65,7 +65,7 @@ class DetailNoteView extends StatelessWidget {
                       SizedBox(height: height * 0.02),
                       SizedBox(
                         width: double.infinity,
-                        height: height * 0.5,
+                        height: height * 0.485,
                         child: ListView(
                           scrollDirection: Axis.vertical,
                           children: [

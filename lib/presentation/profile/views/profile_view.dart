@@ -6,6 +6,7 @@ import 'package:test_koesnadi/common/widgets/button/basic_app_button.dart';
 import 'package:test_koesnadi/core/configs/assets/app_images.dart';
 import 'package:test_koesnadi/core/configs/theme/app_colors.dart';
 import 'package:test_koesnadi/presentation/auth/views/login_view.dart';
+import 'package:test_koesnadi/presentation/home/views/home_view.dart';
 import 'package:test_koesnadi/presentation/profile/bloc/get_user_cubit.dart';
 import 'package:test_koesnadi/presentation/profile/bloc/get_user_state.dart';
 import 'package:test_koesnadi/presentation/profile/views/edit_profile_view.dart';
@@ -199,7 +200,7 @@ class ProfileView extends StatelessWidget {
                     }),
                   ),
                   TextButton(
-                    onPressed: () => Navigator.pop(context),
+                    onPressed: () => AppNavigator.push(context, HomeView()),
                     child: Text(
                       'Go Back',
                       style: TextStyle(
